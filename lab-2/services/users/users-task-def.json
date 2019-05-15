@@ -1,0 +1,34 @@
+{
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "containerDefinitions": [
+    {
+      "name": "users-cntr",
+      "image": "955592929652.dkr.ecr.us-east-1.amazonaws.com/users:latest",
+      "memoryReservation": 128,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/users-task-def",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "volumes": [],
+  "networkMode": "awsvpc",
+  "memory": "512",
+  "cpu": "256",
+  "executionRoleArn": "arn:aws:iam::955592929652:role/ECSTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::955592929652:role/service-role/ECSTaskRole",
+  "family": "users-task-def"
+}

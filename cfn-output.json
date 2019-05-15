@@ -1,8 +1,13 @@
 {
-  "PrivateSubnetTwo": "subnet-0437c573c37bbd689",
-  "Cloud9Env": "https://us-east-1.console.aws.amazon.com/cloud9/ide/d2478cbcdf804476a8193e2823ff4e79?region=us-east-1",
-  "LoadBalancerDNS": "alb-container-labs-1439628024.us-east-1.elb.amazonaws.com",
-  "MonolithTargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:776055576349:targetgroup/conta-Monol-K9290G7WZ41L/1889d75e248e9e3c",
-  "PrivateSubnetOne": "subnet-06437a4061211691a",
+  "PublicSubnetOne": "subnet-0488a64747731eecf",
+  "PrivateSubnetTwo": "subnet-00a9ef1f6a520b5f3",
+  "LoadBalancerARN": "arn:aws:elasticloadbalancing:us-east-1:955592929652:loadbalancer/app/Container-Labs-alb/7f45051cdc783d86",
+  "PublicSubnetTwo": "subnet-0574fc34fe7be3a1b",
+  "Cloud9Env": "https://us-east-1.console.aws.amazon.com/cloud9/ide/18fb96f0d9fb49108e562255afceb775?region=us-east-1",
+  "AppInstanceSecurityGroup": "sg-06a510f12f731eedf",
+  "VPC": "vpc-0bb700c40177ef85e",
+  "LoadBalancerDNS": "Container-Labs-alb-1934640601.us-east-1.elb.amazonaws.com",
+  "MonolithTargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:955592929652:targetgroup/conta-Monol-RGJKTFY6YUZ4/62849cf2c5b90ec7",
+  "PrivateSubnetOne": "subnet-0f8128c368925b555",
   "StackName": "container-labs"
 }

@@ -1,0 +1,29 @@
+{
+    "cluster": "my_first_ecs_cluster", 
+    "serviceName": "threads-service", 
+    "taskDefinition": "threads-task-def:1", 
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:955592929652:targetgroup/threads-cntr-tg/e95ab649f4a7977e", 
+            "containerName": "threads-cntr", 
+            "containerPort": 3000
+        }
+    ], 
+    "desiredCount": 2, 
+    "clientToken": "", 
+    "launchType": "FARGATE", 
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "subnet-00a9ef1f6a520b5f3","subnet-0f8128c368925b555"
+            ], 
+            "securityGroups": [
+                "sg-06a510f12f731eedf"
+            ], 
+            "assignPublicIp": "DISABLED"
+        }
+    }, 
+    "deploymentController": {
+        "type": "ECS"
+    }
+}
